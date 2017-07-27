@@ -1,6 +1,20 @@
-feature:
+feature: need pass number to support code
 And I Wait "5" seconds
 steps:
 Then(/^I Wait "([^"]*)" seconds$/) do |number|
   sleep(number.to_i)
 end
+
+feature need scroll down the nest view
+query=("some view")
+while query.empty?
+     scroll("nestview",:up)
+     query=("some view")
+end
+
+feature: need to check the button is clicked or not:
+q=query("view id:'button' isEnabled:false") : not clickable
+q=query("view id:'button' isEnabled:true") :  clickable
+
+feature: make the checkbox checked:
+query("android.widget.CheckBox",:setChecked=>true)
