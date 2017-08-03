@@ -39,8 +39,9 @@ Set up step:
   extracts: tar vxf apache-ant-1.10.1-bin.tar.gz
   
 12 Set Environment path in .bash.profile:
-export JAVA_HOME=$(/usr/libexec/java_home)
-export ANT_HOME=/Users/yourname/apache-ant-1.10.1
-export PATH="/Users/yourname/Library/Android/sdk/platform-tools/":$PATH:$ANT_HOME/bin
+
+   export JAVA_HOME=$(/usr/libexec/java_home)
+   export ANT_HOME=/Users/yourname/apache-ant-1.10.1
+   export PATH="/Users/yourname/Library/Android/sdk/platform-tools/":$PATH:$ANT_HOME/bin
 
  
