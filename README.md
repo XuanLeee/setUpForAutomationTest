@@ -7,7 +7,7 @@ Check the local gem: gem list --local
 
 
 Set up step:
-1 Download Android Platform-tools
+1 Download Android SDK and go to Platform-tools
 
 2 Get the apk file and put it into the Platform-tools folder (make sure the abd and fastboot are in the folder)
 
@@ -26,8 +26,21 @@ Set up step:
 
 7 Install cucumber: gem install cucumber
 
-8 Install calabash-android :gem install calabash-android
+8 Install bundler: gem install 'bundler'
 
-9
+9 Install calabash-android :gem install calabash-android
+
+10 Download Java Development Kit (JDK)
+   which Java : show/usr/bin/java
+   java -version : check java version
+
+11 Install Ant
+  download apache-ant-1.10.1-bin.tar.gz
+  extracts: tar vxf apache-ant-1.10.1-bin.tar.gz
+  
+12 Set Environment path in .bash.profile:
+export JAVA_HOME=$(/usr/libexec/java_home)
+export ANT_HOME=/Users/yourname/apache-ant-1.10.1
+export PATH="/Users/yourname/Library/Android/sdk/platform-tools/":$PATH:$ANT_HOME/bin
 
  
