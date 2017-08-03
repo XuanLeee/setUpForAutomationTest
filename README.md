@@ -24,6 +24,10 @@ Set up step:
   
 6  Type: rvm install 2.0.0 , this will install ruby 2.0.0 that is stable with calabash
 
-7
+7 Install cucumber: gem install cucumber
+
+8 Install calabash-android :gem install calabash-android
+
+9
 
  
