@@ -15,11 +15,15 @@ Set up step:
 
 4 Using RVM to install Ruby \curl -sSL https://get.rvm.io | bash -s stable --ruby
   ruby --version   : check version
+  which ruby : show work directory 
 
 5 Close terminal and reopen a new one, type:source ~/.rvm/scripts/rvm
   Check rvm install successfully : type rvm | head -n 1
   Will show "rvm is a function" if rvm is running succefully
   type: rvm list known , will show all the known ruby
   
-6 
+6  Type: rvm install 2.0.0 , this will install ruby 2.0.0 that is stable with calabash
+
+7
+
  
