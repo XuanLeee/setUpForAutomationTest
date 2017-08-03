@@ -40,8 +40,15 @@ Set up step:
   
 12 Set Environment path in .bash.profile:
 
-   export JAVA_HOME=$(/usr/libexec/java_home)
-   export ANT_HOME=/Users/yourname/apache-ant-1.10.1
-   export PATH="/Users/yourname/Library/Android/sdk/platform-tools/":$PATH:$ANT_HOME/bin
+export JAVA_HOME=$(/usr/libexec/java_home)
 
+export ANDROID_HOME=/Users/yourname/Library/Android/sdk
+
+export ANT_HOME=/Users/yourname/apache-ant-1.10.1
+
+export PATH="/Users/yourname/Library/Android/sdk/platform-tools/":$PATH:$ANT_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+ to re-scourcing .bash_profile
+ 
+  source ~/.bash_profile
  
