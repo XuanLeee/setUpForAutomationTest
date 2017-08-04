@@ -51,4 +51,13 @@ export PATH="/Users/yourname/Library/Android/sdk/platform-tools/":$PATH:$ANT_HOM
  to re-scourcing .bash_profile
  
   source ~/.bash_profile
+  
+ 13 Create a Gemfile in platform-tools folder
+ 
+ 14 bundle install
+ 
+ 15 Run: calabash-android setup 
+    And answer all the questions
+ 16 
+
  
