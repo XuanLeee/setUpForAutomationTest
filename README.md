@@ -40,14 +40,14 @@ Set up step:
   
 12 Set Environment path in .bash.profile:
 
-export JAVA_HOME=$(/usr/libexec/java_home)
-
+export JAVA_HOME=/Library/Java/Home
 export ANDROID_HOME=/Users/yourname/Library/Android/sdk
-
 export ANT_HOME=/Users/yourname/apache-ant-1.10.1
-
-export PATH="/Users/yourname/Library/Android/sdk/platform-tools/":$PATH:$ANT_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-
+export PATH="/Users/yourname/Library/Android/sdk/":$PATH:$ANT_HOME/bin
+export PATH=$PATH:$ANDROID_HOME
+export PATH=$PATH:$JAVA_HOME/bin/java
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
  to re-scourcing .bash_profile
  
   source ~/.bash_profile
@@ -58,6 +58,9 @@ export PATH="/Users/yourname/Library/Android/sdk/platform-tools/":$PATH:$ANT_HOM
  
  15 Run: calabash-android setup 
     And answer all the questions
- 16 
+ 16 Resign the app :
+       calabash-android resign /Users/yourname/Library/Android/sdk/platform-tools/app-canary.apk
+ 17 Run: calabash-android run app-canary.apk
+ 
 
  
