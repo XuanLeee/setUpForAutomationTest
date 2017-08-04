@@ -48,6 +48,7 @@ export PATH=$PATH:$ANDROID_HOME
 export PATH=$PATH:$JAVA_HOME/bin/java
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
  to re-scourcing .bash_profile
  
   source ~/.bash_profile
@@ -62,5 +63,18 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
        calabash-android resign /Users/yourname/Library/Android/sdk/platform-tools/app-canary.apk
  17 Run: calabash-android run app-canary.apk
  
+ 
+ 
+Trouble shooting:
+1 Json conflic can be solved by : delete gem/gem.lock -> budndle init->edit gem file with 
+
+# Contents of Gemfile
+source "https://rubygems.org"
+
+gem 'calabash-android'
+gem 'cucumber'
+
+Then do bundle install
+
 
  
