@@ -101,7 +101,7 @@ Then do bundle install
 1 Fail scenarios can be found at logs, calabash also will take screen shot for the fail UI and save it in your working directory
 2 Different sceranios can be run with :
 calabash-android run your.apk --tags @important
-
+calabash-android run your.apk  --tags @important   
 
 # Set up step for IOS:
 
