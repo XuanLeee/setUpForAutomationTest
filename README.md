@@ -104,5 +104,10 @@ calabash-android run your.apk --tags @important
 calabash-android run your.apk  --tags @important   
 
 # Set up step for IOS:
+1 Install ruby and calabash-cucumber in the root folder of project
+    gem install calabash-cucumber
+2 Using calabash-ios command to download the latest version of calabash.framework
+    calabash-ios download
+3
 
 
