@@ -105,10 +105,15 @@ calabash-android run your.apk  --tags @important
 
 # Set up step for IOS:
 1 Install ruby and calabash-cucumber in the root folder of project
+
     gem install calabash-cucumber
+    
 2 Using calabash-ios command to download the latest version of calabash.framework
+
     calabash-ios download
+    
 3 Linke the app with calabash.framework:
+
     (1) git clone target-repo
     (2) cd repo and do pod install ( need cocoapad install first)
     (3) if there is swift socket-io issues, change the socket-io version to "11.1.3"
