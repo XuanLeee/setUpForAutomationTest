@@ -128,6 +128,10 @@ calabash-android run your.apk  --tags @important
 
 # Set up steps for physical target device:
 
-1
+1 Find if device has enable for development: xcrun instruments -s devices, also enable Developer->UI Automation in setting
+
+2 Run on Xcode and get app on the phone
+
+3
 
 
