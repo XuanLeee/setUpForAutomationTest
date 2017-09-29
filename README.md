@@ -132,6 +132,8 @@ calabash-android run your.apk  --tags @important
 
 2 Run on Xcode and get app on the phone
 
-3
+3 Start with target device
+
+4 Run calabash-ios run some.app
 
 
