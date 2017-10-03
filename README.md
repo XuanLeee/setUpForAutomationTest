@@ -133,6 +133,14 @@ calabash-android run your.apk  --tags @important
 2 Run on Xcode and get app on the phone
 
 3 Start with target device
+   Create a .sh file:
+     #!/bin/sh
+
+      export BUNDLE_ID=ca.ohri.immunizenu
+      export CODE_SIGN_IDENTITY="iOS Developer: YOURNAME(Ottawa Hospital Research Institute)"
+      export DEVICE_ENDPOINT=http://192.168.128.00:37265
+      export DEVICE_TARGET=f9f66342ad6225ef481eb3a02850a03d3a627472
+      calabash-ios console device
 
 4 Run calabash-ios run some.app
 
