@@ -134,7 +134,8 @@ calabash-android run your.apk  --tags @important
 
 3 Start with target device
    Create a .sh file:
-     #!/bin/sh
+   
+       #!/bin/sh
 
       export BUNDLE_ID=ca.ohri.immunizenu
       export CODE_SIGN_IDENTITY="iOS Developer: YOURNAME(Ottawa Hospital Research Institute)"
