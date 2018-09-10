@@ -145,4 +145,12 @@ calabash-android run your.apk  --tags @important
 
 4 Run calabash-ios run some.app
 
+# Set up steps for IOS with cocoapods
 
+1 Enter this scrip on Podfile under Pods 
+      pod 'Calabash', :configurations => ['Calabash']
+
+2 do pod install
+      try pod update while pod install not work
+
+3 
